@@ -1,0 +1,36 @@
+import java.util.*;
+class quadratic
+{
+public static void main(String args[])
+{
+Scanner s =new Scanner(System.in);
+double a, b, c;
+double R1, R2;
+double D;
+System.out.println("Enter the value of a");
+a=s.nextInt();
+System.out.println("Enter the value of b");
+b=s.nextInt();
+System.out.println("Enter the value of c");
+c=s.nextInt();
+D=b*b-(4*a*c);
+if(D>0)
+{
+System.out.println("Roots are Real and Unequal");
+R1=(-b+Math.pow(D, 0.5))/(2*a);
+R2=(-b-Math.pow(D, 0.5))/(2*a);
+System.out.println("Roots are"+R1 +R2);
+}
+else if (D==0)
+{
+System.out.println("Roots are Real and Equal");
+R1=-b/(2*a);
+R2=R1;
+System.out.println("Root is="+R1);
+}
+else
+{
+System.out.println("The Equation has no real roots");
+}
+}
+}
